@@ -11,4 +11,6 @@ This implementation uses 1024 bytes of RAM in the microcontroller for a screen b
 
 See the header file "OLED_display_avr8_lib.h" for a synopsis of functions provided.
 
+NB: Your application must include the function "PGM_ReadData()" defined in the source file "PGM_ReadData.c".
+
 More embedded resources at: www.mjbauer.biz/mjb_resources.htm
