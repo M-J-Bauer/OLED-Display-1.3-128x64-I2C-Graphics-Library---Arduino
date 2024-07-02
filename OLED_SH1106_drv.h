@@ -1,7 +1,16 @@
 /*
  * File:    OLED_SH1106_drv.h
  *
- * Low-level driver def's for monochrome Graphic SH1106 module, 132 x 64 pixels.
+ * Low-level driver functions for monochrome graphic display module, 132 x 64 pixels,
+ * customized for SH1106 OLED controller using 2-wire IIC (I2C) MCU interface.
+ * This version uses I2C driver functions from module "I2C_master_drv".
+ *
+ * The SH1106 driver functions work with MJB's GLCD library: LCD_graphics_lib.*
+ * and OLED display library: OLED_display_avr8_lib.*
+ * Macros (alias's) for OLED display functions are defined in OLED_display_avr8_lib.h.
+ * 
+ * Originated:    2021,  M.J.Bauer  [www.mjbauer.biz]
+ * Last revised:  June 2024, MJB
  *
  */
 #ifndef SH1106_OLED_DRV_H
@@ -22,8 +31,6 @@ typedef unsigned long       uint32;
 typedef unsigned char       bool;
 #endif
 
-// Temporary def for compilation of driver alone; normally defined in app. program.
-// #define USE_I2C_CHANNEL_1  
 
 // Set the IIC device address here (can be wired for 0x3C or 0x3D)
 //

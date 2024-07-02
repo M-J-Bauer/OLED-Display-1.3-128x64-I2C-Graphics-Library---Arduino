@@ -2,6 +2,9 @@
  * File:          OLED_display_avr8_lib.h
  *
  * Overview:      Library for Monochrome Graphic LCD or OLED module, 128 x 64 pixels.
+ *                Customized for 8-bit AVR microcontroller devices.
+ *                Character font tables are located in flash program memory to conserve
+ *                MCU data RAM spce.
  *
  * Target MCU:    AVR 8-bit MCU family, e.g. ATmega32U4, ATmega328P, etc.
  *
