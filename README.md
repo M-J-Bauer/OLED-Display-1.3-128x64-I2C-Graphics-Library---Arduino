@@ -10,6 +10,7 @@ An OLED display library for Arduino IDE may be built from the source code. The S
 Note: This implementation uses 1024 bytes of RAM in the microcontroller for a screen buffer, so it may not be suitable for "low-end" microcontrollers
 with small data RAM capacity, e.g. ATmega328P with 2kB of RAM, but it's not impossible, depending on how much RAM the application program needs.
 The screen buffer allows display update functions to execute much faster than using read-modify-write operations in the controller GDRAM.
+Character font tables are located in MCU flash program memory to conserve data RAM space.
 
 See the header file "OLED_display_avr8_lib.h" for a synopsis of functions provided.
 
